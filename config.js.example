@@ -1,0 +1,11 @@
+const port = 3000;
+const botToken = '123456:Abcdefghijklmnopqrstuvwxyz';
+const logFile = './logs/raids_helper.log';
+const lang = 'de';
+
+module.exports = {
+	port,
+	botToken,
+	logFile,
+	lang
+}

@@ -1,0 +1,17 @@
+{
+  "name": "PoGo Raid Helper",
+  "version": "0.1.0",
+  "description": "Telegram Bot for summaries and deleting of raids in combination with PokeAlarm and MyPGoBot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Volker Kochensperger",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-schedule": "^2.1.0",
+    "axios": "^0.24.0"
+  }
+}
