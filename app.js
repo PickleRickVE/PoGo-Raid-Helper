@@ -245,7 +245,6 @@ function updateRaidList(chatId, channelName) {
         .catch(error => {
             //console.log(time  + ' | ' + channelName + ' | summary couldn\'t be deleted');
             fs.writeFile(config.logFile, time  + ' | ' + channelName + ' | summary couldn\'t be deleted\n', {flag: 'a'}, error => {if (error) {console.log(error)}});
-            postRaidList(chatId, channelName);
             return
         });
     }
