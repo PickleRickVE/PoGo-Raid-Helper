@@ -1,5 +1,5 @@
 {
-  "name": "PoGo Raid Helper",
+  "name": "PoGo_Raid_Helper",
   "version": "0.1.0",
   "description": "Telegram Bot for summaries and deleting of raids in combination with PokeAlarm and MyPGoBot",
   "main": "index.js",
