@@ -172,11 +172,8 @@ app.post('/webhook', function(request, response) {
                 }   
         }
         let gymTriggerEnd = text.indexOf('\n', gymTrigger);
-        let gymName = (text.slice(gymTrigger + 3, gymTriggerEnd)).length > 26 ? (text.slice(gymTrigger + 3, gymTriggerEnd)).slice(0, 25) + '..' : text.slice(gymTrigger + 3, gymTriggerEnd);
-        if (gymName.indexOf(' ') == 0) {
-            gymName.slice(1, gymName.length);
-        }
-
+        let gymName = (text.slice(gymTrigger + 3, gymTriggerEnd)).length > 26 ? ((text.slice(gymTrigger + 3, gymTriggerEnd)).slice(0, 25) + '..').trim() : (text.slice(gymTrigger + 3, gymTriggerEnd)).trim();
+        
         // check list for expired raids an delete them
         let raidsCount = 0;
         raids[channel].forEach(function (item) {

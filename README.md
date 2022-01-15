@@ -11,10 +11,9 @@ Telegram Bot for summaries and deleting of raids in combination with PokeAlarm a
 * Clone the source `git clone https://github.com/PickleRickVE/PoGo-Raid-Helper.git`
 * Run `npm install` to set up the project
 * Copy config.js.example to config.js, edit the latter and add your bot-token
-* Set a webhook for your bot in your browser: `https://api.telegram.org/bot<token>/setwebhook?url=<https://your-server:3000>` (a certificate is needed, take a look at this [guide](https://core.telegram.org/bots/webhooks))
+* Set a webhook for your bot in your browser: `https://api.telegram.org/bot<token>/setwebhook?url=<https://your-server:3000/webhook>` (a certificate is needed, take a look at this [guide](https://core.telegram.org/bots/webhooks)) or use a reverse proxy with a subdomain that links to your bot address.
 
 ### Running
-
 * Run `npm start` (preferred in a tmux or screen session)
 * Add your bot to one or more channels in Telegram
 
